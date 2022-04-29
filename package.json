@@ -1,0 +1,11 @@
+{
+  "name": "chatpool",
+  "version": "1.0.0",
+  "description": "Group or one-to-one real time chat application!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dharmik Pansuriya",
+  "license": "ISC"
+}
