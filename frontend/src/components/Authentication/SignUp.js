@@ -66,7 +66,7 @@ const SignUp = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      // history.push("/chats");
+      history.push("/chats");
     } catch (error) {
       toast({
         title: "Error occured!",
@@ -82,7 +82,7 @@ const SignUp = () => {
 
   return (
     <VStack spacing="5px">
-      <FormControl id="username" isRequired>
+      <FormControl id="username-s" isRequired>
         <FormLabel>Name</FormLabel>
         <Input
           placeholder="Enter Your Name"
@@ -90,7 +90,7 @@ const SignUp = () => {
         ></Input>
       </FormControl>
 
-      <FormControl id="email" isRequired>
+      <FormControl id="email-s" isRequired>
         <FormLabel>Email</FormLabel>
         <Input
           placeholder="Enter Your Email"
@@ -98,7 +98,7 @@ const SignUp = () => {
         ></Input>
       </FormControl>
 
-      <FormControl id="password" isRequired>
+      <FormControl id="password-s" isRequired>
         <FormLabel>Password</FormLabel>
         <InputGroup>
           <Input
@@ -114,7 +114,7 @@ const SignUp = () => {
         </InputGroup>
       </FormControl>
 
-      <FormControl id="confirmpassword" isRequired>
+      <FormControl id="confirmpassword-s" isRequired>
         <FormLabel>Confirm Password</FormLabel>
         <InputGroup>
           <Input

@@ -17,7 +17,7 @@ const Login = () => {
   const toast = useToast();
 
   const handleLogin = async () => {
-     setLoading(true);
+    setLoading(true);
     if (!email || !password) {
       toast({
         title: "Please fill all the fields!",
@@ -50,7 +50,7 @@ const Login = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      // history.push("/chats");
+      history.push("/chats");
     } catch (error) {
       toast({
         title: "Error occured!",
@@ -66,7 +66,7 @@ const Login = () => {
 
   return (
     <VStack spacing="5px">
-      <FormControl id="email" isRequired>
+      <FormControl id="email-l" isRequired>
         <FormLabel>Email</FormLabel>
         <Input
           placeholder="Enter Your Email"
@@ -74,7 +74,7 @@ const Login = () => {
         ></Input>
       </FormControl>
 
-      <FormControl id="password" isRequired>
+      <FormControl id="password-l" isRequired>
         <FormLabel>Password</FormLabel>
         <InputGroup>
           <Input
